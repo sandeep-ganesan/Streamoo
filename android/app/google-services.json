@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1080176402729",
+    "project_id": "streamchecker-50d69",
+    "storage_bucket": "streamchecker-50d69.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080176402729:android:4a391a562a4f681815d738",
+        "android_client_info": {
+          "package_name": "com.sandeep.stream_check"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClQFefZD4ZOBfHD5pH5CO-LaJOBoC9zUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
