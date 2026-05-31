@@ -8,7 +8,7 @@ Streamoo focuses on simplicity and real-time visibility by providing a clean int
 
 - **Live Status Widget**: Quickly see which of your favorite streamers are live directly from your home screen.
 - **Multi-Platform Support**: Track streamers across Twitch and YouTube.
-- **Streamer Registration**: Add and manage your favorite streamers بسهولة.
+- **Streamer Registration**: Add and manage your favorite streamers.
 - **Live Stream Cards**: Clean card-style UI displaying:
   - Stream thumbnail
   - Live duration
