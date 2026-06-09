@@ -16,6 +16,10 @@ Streamoo focuses on simplicity and real-time visibility by providing a clean int
 - **Dark Mode**: Dark mode support for a comfortable viewing experience.
 - **Account Sync**: Firebase-powered authentication and syncing across multiple devices.
 
+## Screenshots
+
+| <img src="screenshots/b1.png" width="200"/> | <img src="screenshots/b2.png" width="200"/> | <img src="screenshots/b3.png" width="200"/> |
+
 ## Technical Architecture
 
 To ensure efficient and up-to-date stream tracking, Streamoo follows a polling-based architecture:
@@ -39,3 +43,44 @@ To ensure efficient and up-to-date stream tracking, Streamoo follows a polling-b
 - **APIs**: Twitch API, YouTube Data API
 - **Hosting**: Render (backend deployment)
 - **CI/CD**: GitHub Actions
+
+## Build Instructions
+
+Follow these instructions to build and run the Streamoo application on your local machine.
+
+### Prerequisites
+
+Ensure you have the following installed:
+* [Flutter SDK](https://docs.flutter.dev/get-started/install) (latest stable version recommended)
+* [Android Studio](https://developer.android.com/studio) (for Android emulation/building)
+* [Xcode](https://developer.apple.com/xcode/) (for iOS emulation/building - macOS only)
+* A Firebase account
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/streamoo.git
+cd streamoo
+```
+
+### 2. Install Dependencies
+
+Fetch the required Flutter packages:
+```bash
+flutter pub get
+```
+
+### 3. Firebase Configuration
+
+Streamoo relies on Firebase for authentication and database management. You must link your own Firebase project to run the app locally.
+
+1. Create a new project in the [Firebase Console](https://console.firebase.google.com/).
+2. Enable **Firestore Database** and **Firebase Authentication** (Email/Password or preferred providers).
+3. Connect your app to Firebase.
+
+### 4. Run the Application
+
+Start a virtual emulator or connect a physical device, then run:
+
+```bash
+flutter run
