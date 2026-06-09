@@ -1,0 +1,1 @@
+This folder only exists to keep the screenshots required for the readme file for GitHub.
