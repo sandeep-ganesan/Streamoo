@@ -2,11 +2,14 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:home_widget/home_widget.dart';
 
 class LiveWidgetController {
-  static const String androidWidgetName = 'HomeWidgetProvider';
+  // Must match your Android Glance receiver class path exactly:
+  // android/app/src/main/kotlin/com/sandeep/stream_check/glance/HomeWidgetReceiver.kt
+  static const String _androidQualifiedName =
+      'com.sandeep.stream_check.glance.HomeWidgetReceiver';
 
-  static const _kHasLive = 'hasLive';
-  static const _kStatusText = 'statusText';
-  static const _kDetailText = 'detailText';
+  static const String _kHasLive = 'hasLive';
+  static const String _kStatusText = 'statusText';
+  static const String _kDetailText = 'detailText';
 
   static Future<void> updateFromFirestore(String uid) async {
     final summary = await _liveSummary(uid);
@@ -74,7 +77,8 @@ class LiveWidgetController {
   }
 
   static Future<void> _refreshWidget() async {
-    await HomeWidget.updateWidget(name: androidWidgetName, iOSName: null);
+    // Glance setup (home_widget 0.8.x): update using the qualified receiver name
+    await HomeWidget.updateWidget(qualifiedAndroidName: _androidQualifiedName);
   }
 }
 
@@ -82,6 +86,7 @@ class _LiveSummary {
   final bool hasLive;
   final String statusText;
   final String detailText;
+
   const _LiveSummary({
     required this.hasLive,
     required this.statusText,
