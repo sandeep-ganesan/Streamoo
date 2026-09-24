@@ -59,7 +59,7 @@ Ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/streamoo.git
+git clone https://github.com/sandeep-ganesan/streamoo.git
 cd streamoo
 ```
 
